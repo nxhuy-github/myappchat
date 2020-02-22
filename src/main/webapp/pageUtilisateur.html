@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>User Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/loadUserAndListRoom.js"></script>
+    <script src="js/helper.js"></script>
+</head>
+<body id="bodyPage">
+
+<div class="header-container">
+    <div class="video-container">
+        <video preload="true" autoplay="autoplay" loop="loop" volume="0">
+            <source src="video/dubai.mp4" type="video/mp4">
+            <source src="video/dubai.webm" type="video/webm">
+        </video>
+    </div>
+</div>
+
+
+<section id="addRoom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Page Utilisateur</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h4 id="userName"></h4>
+                <div>
+                    <form>
+                        <input type="text" name="roomName" id="roomName" placeholder="Create new room" required>
+                        <button id="btnSubmit">Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <section class="bg-light" id="room">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">List Room</h2>
+                        <h3 class="section-subheading text-muted">Let's join and create your own room</h3>
+                    </div>
+                </div>
+                <div id="listRoom" class="row">
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+</body>
+</html>

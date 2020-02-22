@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon appli de Chat</title>
+</head>
+<body>
+    <iframe src="messages.jsp" width="100%" height="500px" name="messages">
+
+    </iframe>
+    <form action="/messages.jsp" target="messages" method="post">
+        Enter votre message : <input name="messageUser" type="text"><input type="submit">
+    </form>
+    <a href="/CreateRoom">Back</a>
+</body>
+</html>
